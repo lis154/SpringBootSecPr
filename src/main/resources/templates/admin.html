@@ -102,11 +102,10 @@
                                 <td><p th:text="${el.password}"/></td>
                                 <td><p th:text="${el.age}"/></td>
                                 <td><p th:text="${el.getListRoles()}"/></td>
-<!--                                <td><button type="submit" class="btn btn-success " data-toggle="modal" data-target="#exampleModalLong" data-id="${el.name}">edit</button></td>-->
-<!--                                <td><a data-toggle="modal" data-name="ISBN-001122" title="Add this item" class="btn btn-success" href="#exampleModalLong">test</a></td>-->
+
                                 <td><a data-toggle="modal" th:data-name="${el.name}" th:data-age="${el.age}" th:data-password="${el.password}" th:data-id="${el.id}" title="Add this item" class="open-AddBookDialog btn btn-primary" href="#exampleModalLong">Edit</a></td>
                                 <td><a data-toggle="modal" th:data-name="${el.name}" th:data-age="${el.age}" th:data-password="${el.password}" th:data-id="${el.id}" title="Add this item" class="open-DeleteDel btn btn-danger" href="#ModalDelete">Delete</a></td>
-<!--                                <td><button type="button" class="btn btn-danger ">delete</button></td>-->
+
                             </tr>
                         </div>
                         </tbody>

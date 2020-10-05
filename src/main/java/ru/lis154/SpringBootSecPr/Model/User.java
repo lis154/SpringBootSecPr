@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-@Component
+
 @Entity
 @Table(name = "users")
 public class User  implements UserDetails {
